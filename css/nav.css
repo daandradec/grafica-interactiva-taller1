@@ -1,0 +1,52 @@
+nav{
+	position: fixed;
+	top:0;
+	left:0;
+	
+	width: 100%;
+	height:180px;
+
+	font-family: 'Signika-Light';
+	background: rgb(255,255,255);
+}
+
+nav h1{
+	width: 95%;
+	height:126px;
+	margin: 0 auto;
+
+	font-size: 60px;
+	font-weight: 300;
+	color:#212121;
+	border-bottom: 1px solid #E5E5E5;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+	text-align: center;
+}
+
+nav ul{
+	list-style: none;
+	width: 100%;
+	height: 54px;
+
+
+	font-weight: 300;
+	line-height: 24px;
+	color:#6c749e;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+	text-align: center;	
+}
+nav ul li{
+	display: inline;
+	padding:0 20px;
+}
+nav ul li a{
+	color: #6c749e;
+}

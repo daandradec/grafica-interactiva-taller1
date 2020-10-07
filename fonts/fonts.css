@@ -1,0 +1,16 @@
+@font-face{
+  font-family: 'Anton';
+  font-style: normal;  
+  src: url('Anton/Anton-Regular.ttf');
+}
+
+@font-face{
+  font-family: 'Signika';
+  font-style: normal;  
+  src: url('Signika/Signika-Regular.ttf');
+}
+@font-face{
+  font-family: 'Signika-Light';
+  font-style: normal;  
+  src: url('Signika/Signika-Light.ttf');
+}
