@@ -10,6 +10,15 @@ nav{
 	background: rgb(255,255,255);
 }
 
+nav > div:nth-child(1){
+	position: relative;
+}
+
+nav input, nav label{
+	display: none;
+	cursor: pointer;
+}
+
 nav h1{
 	width: 95%;
 	height:126px;
@@ -49,4 +58,74 @@ nav ul li{
 }
 nav ul li a{
 	color: #6c749e;
+}
+
+nav ul li.active a{
+	position: relative;
+	width: 100%;
+
+	color: rgba(108, 116, 158, 0.8);
+}
+
+nav ul li.active a:after{
+	content: " ";	
+	position: absolute;
+
+	width:60%;
+	height: 2px;
+	margin: 0 auto;
+
+	bottom:-10px;
+	left:0;
+	right:0;
+	
+	background-color: rgba(108, 116, 158, 0.8);
+
+}
+
+@media only screen and (max-width: 900px){
+	nav h1{
+		font-size:40px;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	nav label, nav input{
+		display: block;
+		position: absolute;
+		top:6%;
+		right:0;		
+	}
+	#btn-menu:checked ~ ul{
+		margin-left: 0px;
+	}
+	nav ul{
+		height: calc(100vh - 126px) !important;	
+		display: block;
+		padding-top: 18px;
+		background: rgb(255,255,255);
+		margin-left: 600px;
+		transition: 0.1s;
+	}
+	nav ul li{
+		display: block !important;
+		padding: 0;
+	}
+	nav ul li a{
+		color:  #505052 !important;
+		font-size: 20px;
+		line-height: 42px;
+		text-shadow: 0px 0px 1px gray;
+	}
+	nav ul li:nth-child(1) a{
+		position: relative;
+		width: 100%;
+
+		color: rgba(108, 116, 158, 0.8);				
+	}	
+	nav ul li:nth-child(1) a:after{
+		width: 150%;
+		bottom:-10px;
+		left: -25%;
+	}
 }

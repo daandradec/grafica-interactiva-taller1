@@ -14,25 +14,6 @@ a{
 	text-decoration: none;
 }
 
-nav ul li:nth-child(1) a{
-	position: relative;
-	width: 100%;
-
-	color: rgba(108, 116, 158, 0.8);
-}
-
-nav ul li:nth-child(1) a:after{
-	content: " ";	
-	position: absolute;
-
-	width:60%;
-	height: 2px;
-	margin: 0 auto;
-
-	bottom:-10px;
-	left:0;
-	right:0;
-	
-	background-color: rgba(108, 116, 158, 0.8);
-
+ul{
+	list-style: none;	
 }
