@@ -1,0 +1,66 @@
+/* APLICAR ESTILOS DE MARGEN, TAMAÑO Y COLOR DE FONDO A LA ETIQUETA SECCION*/
+section{
+	margin-top: 180px;
+	min-height: calc(100vh);
+	background: white;
+}
+/* AL PRIMER HIJO DE TIPO DIV DE UN SECTION APLIQUE TODOS ESTOS ESTILOS DE ANCHO, MARGEN, ALINEACION Y PADDING*/
+section > div:nth-child(1){
+	width: 64%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 40px;
+}
+/* A TODOS LOS H3 DENTRO DE UNA SECCION APLIQUE TODOS ESTOS ESTILOS DE FUENTE, COLOR, PADDING, BORDE*/
+section h3{
+	font-family: 'Anton';
+	font-size: 40px;
+	line-height: 44px;
+	color: #e854a4;
+	padding-bottom: 25px;
+	border-bottom: 1px dotted rgb(205,205,205);
+}
+/* A TODOS LOS P DENTRO DE UNA SECCION APLIQUE TODOS ESTOS ESTILOS DE FUENTE, PADDING, COLOR*/
+section p{
+	font-family: 'Signika-Light';
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	padding-right: 10px;
+	padding-top: 5px;
+	color:gray;
+}
+/* A TODOS LOS DIV DENTRO DE UN FIGCAPTION QUE ESTE DENTRO DE UNA SECCIÓN HAGALOS ELEMENTOS INLINE Y QUE OCUPEN EL 30% DEL ANCHO*/
+section figcaption div{
+	width:30%;
+	display: inline-block;
+	padding: 10px 0;
+}
+/* A TODAS LAS IMG DENTRO DE UN DIV DENTRO DE UN FIGCAPTION DENTRO DE UNA SECCIÓN HAGA QUE OCUPEN TODO EL ANCHO DE SU PADRE Y TENGAN ALGO DE PADDING A LOS LADOS HORIZONTALES*/
+section figcaption div img{
+	width: 100%;
+	padding: 0 5px;
+}
+/* CENTRAR LAS ETIQUETAS LEGEND DENTRO DE UNA SECCIÓN*/
+section legend{
+	text-align: center;
+}
+
+
+
+/* EVENTO DE RWD */
+@media only screen and (max-width: 900px){
+	/* HAGA QUE EL PRIMER HIJO DIV TENGA MAS TAMAÑO*/
+	section > div:nth-child(1){
+		width:72%;
+		margin: 0 auto;	
+	}	
+}
+
+@media only screen and (max-width: 600px){
+	/* HAGA QUE EL PRIMER HIJO DIV OCUPE TODO EL ANCHO */
+	section > div:nth-child(1){
+		width:100%;
+		margin: 0;
+	}
+}

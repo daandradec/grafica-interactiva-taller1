@@ -1,3 +1,4 @@
+/* APLICAR ESTILOS DE UBICAR EN EL TOPE DE LA VENTANA, ANCHO, ALTO, FUENTE Y FONDO A LA ETIQUETA NAV */
 nav{
 	position: fixed;
 	top:0;
@@ -7,18 +8,18 @@ nav{
 	height:180px;
 
 	font-family: 'Signika-Light';
-	background: rgb(255,255,255);
+	background: rgb(255,255,255);	
 }
-
+/* VUELVA RELATIVO EL PRIMER DIV PARA MANEJAR SUS HIJOS DE FORMA ABSOLUTA*/
 nav > div:nth-child(1){
 	position: relative;
 }
-
+/* DESAPAREZCA EL CHECKBOX PARA EL EVENTO DE BOTON RWD */
 nav input, nav label{
 	display: none;
 	cursor: pointer;
 }
-
+/* A TODOS LOS H1 DEL NAV DELE ESTOS ESTILOS DE ANCHO FUENTE, Y FORMA DE MOSTRARSE*/
 nav h1{
 	width: 95%;
 	height:126px;
@@ -35,7 +36,7 @@ nav h1{
 	vertical-align: middle;
 	text-align: center;
 }
-
+/* A TODOS LOS UL DEL NAV DELE ESTOS ESTILOS DE ANCHO FUENTE, Y FORMA DE MOSTRARSE*/
 nav ul{
 	list-style: none;
 	width: 100%;
@@ -52,21 +53,23 @@ nav ul{
 	vertical-align: middle;
 	text-align: center;	
 }
+/* A TODOS LOS LI DENTRO DE UN UL DEL NAV HAGA QUE SE MUESTREN HORIZONTALMENTE CON ESPACIO*/
 nav ul li{
 	display: inline;
 	padding:0 20px;
 }
+/* DELE UN COLOR A LOS HIPERVINCULOS DE LAS LISTAS DEL NAV */
 nav ul li a{
 	color: #6c749e;
 }
-
+/* DELE UNOS ESTILOS DISTINTOS AL HIPERVINCULO DENTRO DEL ITEM DE LA LISTA QUE ESTA ACTIVO */
 nav ul li.active a{
 	position: relative;
 	width: 100%;
 
 	color: rgba(108, 116, 158, 0.8);
 }
-
+/* DELE UNOS ESTILOS AL COMPONENTE AFTER DE UN HIPERVINCULO DENTRO DEL ITEM DE LA LISTA QUE ESTA ACTIVO PARA TENER LA LINEA QUE APARECE ABAJO DE ESTOS */
 nav ul li.active a:after{
 	content: " ";	
 	position: absolute;
@@ -83,47 +86,67 @@ nav ul li.active a:after{
 
 }
 
+
+
+/* EVENTO DE RWD */
 @media only screen and (max-width: 900px){
+	/* REDUZCA LA FUENTE DE LOS H1 DE LOS NAV*/
 	nav h1{
 		font-size:40px;
 	}
 }
 
 @media only screen and (max-width: 600px){
+	/* HAGA QUE APAREZCA EL BOTON DE RWD */
 	nav label, nav input{
 		display: block;
 		position: absolute;
-		top:6%;
-		right:0;		
+		top:38%;
+		right:0;
+		bottom: 0;
+		transition: 0;
+		height: 30px !important;
 	}
+	/* HAGA QUE SE MUESTRE LA BARRA DE NAVEGACION CON UNA ANIMACIÓN*/
 	#btn-menu:checked ~ ul{
-		margin-left: 0px;
-	}
-	nav ul{
+		margin-left: 0px;		
 		height: calc(100vh - 126px) !important;	
+	}
+	/* HAGA QUE ESTE UN POCO MAS ARRIBA EL NAV*/
+	nav{
+		z-index: 10;
+	}
+	/* HAGA QUE EL UL DEL NAV SE MUESTRE DE DISTINTA FORMA EN CELULAR */
+	nav ul{		
+		height: 0;
 		display: block;
 		padding-top: 18px;
 		background: rgb(255,255,255);
 		margin-left: 600px;
 		transition: 0.1s;
+		float:left;	
 	}
+	/* MUESTRE LOS ITEMS DE LA LISTA VERTICALMENTE */
 	nav ul li{
 		display: block !important;
 		padding: 0;
 	}
+	/* HAGA QUE SE MUESTRE DISTINTO EL CONTENIDOS DE LAS LISTAS EN CELULAR QUE EN PC */
 	nav ul li a{
 		color:  #505052 !important;
 		font-size: 20px;
 		line-height: 42px;
 		text-shadow: 0px 0px 1px gray;
 	}
-	nav ul li:nth-child(1) a{
+	/* EN CELULAR HAGA QUE SE MUESTRE EL CONTENIDO DEL ITEM DE LA LISTA ACTIVO DIFERENTE*/
+	nav ul li.active a{
 		position: relative;
 		width: 100%;
 
 		color: rgba(108, 116, 158, 0.8);				
 	}	
-	nav ul li:nth-child(1) a:after{
+	/* HAGA QUE SE MUESTRE MAS GRANDE LA LINEA QUE APARECE DEBAJO */
+	nav ul li.active a:after{
 		width: 150%;
 		bottom:-10px;
 		left: -25%;

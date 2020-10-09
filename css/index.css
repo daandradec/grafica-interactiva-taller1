@@ -1,3 +1,4 @@
+/* REINICIO DE ESTILOS PARA LAS ETIQUETAS PRINCIPALES HTML Y BODY */
 html, body{
 	min-width: 100%;
 	min-height: 100%;
@@ -5,15 +6,16 @@ html, body{
 	padding: 0;
 }
 
+/* APLICAR MARGIN Y PADDING DE 0 PARA TODO ESTE CONJUNTO DE ETIQUETAS*/
 h1, h2, h3, h4, h5, h6, ul, section, img, p{
 	margin: 0;
 	padding: 0;
 }
-
+/* QUITAR LA LINEA DECORATIVA A LOS HIPERVINCULOS*/
 a{
 	text-decoration: none;
 }
-
+/* QUITAR LOS DOTS A LAS LISTAS */
 ul{
 	list-style: none;	
 }

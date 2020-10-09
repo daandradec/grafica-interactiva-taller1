@@ -1,13 +1,16 @@
+/* LA SECCION DEL INDEX SE DIVIDE EN 3 CAJAS DE CONTENIDOS Y CADA CAJA ES UN DIV*/
+
+/* AL PRIMER DIV HIJO DE UNA SECCION QUE ESTE EN EL BODY HAGA QUE TENGA TODO EL ANCHO Y ALGO DE ESPACIO VERTICAL */
 body > section > div:nth-child(1){
 	width:100%;
 	padding: 55px 0;	
 }
-
+/* AL PRIMER HIJO DE TIPO DIV DENTRO DE EL PRIMER HIJO DE TIPO DIV X2 DE UNA SECCION HAGA QUE TENGA ESTOS ESTILOS */
 section > div:nth-child(1) > div:nth-child(1){
 	width:64%;
 	margin: 0 auto;	
 }
-
+/* AL H2 DENTRO DE EL PRIMER HIJO DE TIPO DIV X2 DE UNA SECCION HAGA QUE TENGA ESTOS ESTILOS DE FUENTE, COLOR Y PADDING */
 section > div:nth-child(1) > div:nth-child(1) h2{
 	font-family: 'Anton';
 	font-size: 40px;
@@ -15,32 +18,34 @@ section > div:nth-child(1) > div:nth-child(1) h2{
 	color: #e854a4;
 	padding-bottom: 50px;
 }
-
+/* AL PRIMER HIJO DE TIPO SECCION DENTRO DE EL PRIMER HIJO DE TIPO DIV X2 DE UNA SECCION HAGA QUE TENGA ESTOS DE ORIENTACION ESTILO TABLA */
 section > div:nth-child(1) > div:nth-child(1) section{
 	box-sizing: border-box;
 	display: table;
 }
-
+/* AL PRIMER HIJO DE TIPO DIV DENTRO DE UNA SECCION DENTRO DE EL PRIMER HIJO DE TIPO DIV X3 DE UNA SECCIÓN HAGA QUE FLOTE A LA IZQUIERDA PARA AYUDAR AL RESPONSIVE Y TENGA LA MITAD DEL ANCHO DEL PADRE */
 section > div:nth-child(1) > div:nth-child(1) section > div:nth-child(1){
 	float: left;
 	width:50%;
 }
+/* AL PRIMER HIJO DE TIPO DIV DENTRO DE UNA SECCION DENTRO DE EL PRIMER HIJO DE TIPO DIV X3 DE UNA SECCIÓN HAGA QUE FLOTE A LA IZQUIERDA PARA AYUDAR AL RESPONSIVE Y TENGA LA MITAD DEL ANCHO DEL PADRE */
 section > div:nth-child(1) > div:nth-child(1) section > div:nth-child(2){
 	float: left;
 	width: 50%;
 }
-
+/* AL PRIMER HIJO DE TIPO DIV DENTRO DE UNA SECCION DENTRO DE EL PRIMER HIJO DE TIPO DIV X3 DE UNA SECCIÓN HAGA QUE FLOTE A LA IZQUIERDA PARA AYUDAR AL RESPONSIVE Y TENGA UN 60% DEL ANCHO Y ALINEACIÓN DE CENTRO */
 section > div:nth-child(1) > div:nth-child(1) section > div > div:nth-child(1){
 	float: left;
 	width:60%;
 	text-align: right;	
 }
+/* AL PRIMER HIJO DE TIPO DIV DENTRO DE UNA SECCION DENTRO DE EL PRIMER HIJO DE TIPO DIV X3 DE UNA SECCIÓN HAGA QUE FLOTE A LA IZQUIERDA PARA AYUDAR AL RESPONSIVE Y TENGA UN 40% DEL ANCHO Y ALINEACIÓN DE CENTRO */
 section > div:nth-child(1) > div:nth-child(1) section > div > div:nth-child(2){
 	float: left;
 	width:40%;
 }
 
-
+/* AL H3 DENTRO DE EL PRIMER HIJO DE TIPO DIV X2 DE UNA SECCION HAGA QUE TENGA ESTOS ESTILOS DE FUENTE, COLOR Y PADDING */
 section > div:nth-child(1) > div:nth-child(1) h3{
 	font-family: 'Anton';
 	font-weight: 300;
@@ -49,7 +54,7 @@ section > div:nth-child(1) > div:nth-child(1) h3{
 	padding-right: 10px;
 	color:#212121;
 }
-
+/* AL P DENTRO DE EL PRIMER HIJO DE TIPO DIV X2 DE UNA SECCION HAGA QUE TENGA ESTOS ESTILOS DE FUENTE, COLOR Y PADDING */
 section > div:nth-child(1) > div:nth-child(1) p{
 	font-family: 'Signika-Light';
 	font-weight: 300;
@@ -58,7 +63,7 @@ section > div:nth-child(1) > div:nth-child(1) p{
 	padding-right: 10px;
 	color:gray;
 }
-
+/* A LAS IMAGENES DENTRO DE EL PRIMER HIJO DE TIPO DIV X2 DE UNA SECCION HAGA QUE TENGA ESTOS ESTILOS DE FUENTE, COLOR Y PADDING */
 section > div:nth-child(1) > div:nth-child(1) img{
 	width: 100% !important;
 }
@@ -74,21 +79,23 @@ section > div:nth-child(1) > div:nth-child(1) img{
 
 
 
-
+/* AL SEGUNDO BLOQUE DE CONTENIDO EN LA SECCION DELE COLOR Y ANCHO COMPLETO*/
 body > section > div:nth-child(2){
 	width: 100%;
 	background: #F9F9F9;
 }
-
+/* DE TODO EL ARBOL DEL SEGUNDO BLOQUE AL PRIMER SUBBLOQUE DELE ANCHO DE 64%, MARGENES Y PADDINGS*/
 body > section > div:nth-child(2) > div:nth-child(1){
 	width: 64%;
 	margin: 0 auto;
 	padding-top:50px;
 	padding-bottom: 55px;
 }
+/* DE TODO EL ARBOL DEL SEGUNDO BLOQUE A LAS IMAGENES DEL PRIMER SUBBLOQUE DELE ANCHO COMPLETO */
 body > section > div:nth-child(2) > div:nth-child(1) > img{
 	width: 100%;		
 }
+/* DE TODO EL ARBOL DEL SEGUNDO BLOQUE A LOS H3 DEL PRIMER SUBBLOQUE DELE ESTILOS DE FUENTE, COLOR Y PADDING */
 body > section > div:nth-child(2) > div:nth-child(1) h3{
 	font-family: 'Anton';
 	font-weight: 300;
@@ -97,6 +104,7 @@ body > section > div:nth-child(2) > div:nth-child(1) h3{
 	color:#e854a4;
 	padding: 20px 0;
 }
+/* DE TODO EL ARBOL DEL SEGUNDO BLOQUE AL OBJETO AFTER QUE TIENEN TODAS LAS ETIQUETAS PARA EL PRIMER SUBBLOQUE DELE ESTILOS DE SER UNA LINEA RECTANGULAR GRIS */
 body > section > div:nth-child(2) > div:nth-child(1) h3:after{
 	content: "";
 	width:50%;
@@ -105,7 +113,7 @@ body > section > div:nth-child(2) > div:nth-child(1) h3:after{
 	display: block;
 	margin-top:20px;
 }
-
+/* DE TODO EL ARBOL DEL SEGUNDO BLOQUE A LOS P DEL PRIMER SUBBLOQUE DELE ESTILOS DE FUENTE, COLOR Y PADDING */
 body > section > div:nth-child(2) > div:nth-child(1) p{
 	font-family: 'Signika-Light';
 	font-weight: 300;
@@ -117,53 +125,64 @@ body > section > div:nth-child(2) > div:nth-child(1) p{
 }
 
 
-/* */
+/* EVENTO DE RWD */
 @media only screen and (max-width: 900px){
+	/* HAGA QUE EL PRIMER HIJO DIV DEL PRIMER BLOQUE TENGA MAS TAMAÑO*/
 	section > div:nth-child(1) > div:nth-child(1){
 		width:72%;
 		margin: 0 auto;	
-	}	
+	}
+	/* A TODOS ESTOS DIVS QUE ESTABAN FLOTANDO PARA FACILITAR EL RWD QUITELES LA PROPIEDAD FLOAT PARA QUE TODO SE COLOQUE UNO DEBAJO DEL OTRO */	
 	section > div:nth-child(1) > div:nth-child(1) section > div > div:nth-child(1){
 		float: none;
 		width:100%;
 		text-align: right;
 	}
+	/* A TODOS ESTOS DIVS QUE ESTABAN FLOTANDO PARA FACILITAR EL RWD QUITELES LA PROPIEDAD FLOAT PARA QUE TODO SE COLOQUE UNO DEBAJO DEL OTRO */
 	section > div:nth-child(1) > div:nth-child(1) section > div > div:nth-child(2){
 		float: none;
 		width:100%;
 	}
+	/* PARA EL SEGUNDO BLOQUE DE CONTENIDO AL PRIMER HIJO DIV DELE UN ANCHO DE 80%*/
 	body > section > div:nth-child(2) > div:nth-child(1){
 		width:80%;
 	}
+	/* AL AFTER QUE TIENE EL H3 DENTRO DEL SEGUNDO BLOQUE DE CONTENIDO EN SU PRIMER HIJO DELE UN ANCHO DE 80%*/
 	body > section > div:nth-child(2) > div:nth-child(1) h3:after{
 		width:80%;
 	}
-
+	/* AL P DENTRO DEL SEGUNDO BLOQUE DE CONTENIDO EN SU PRIMER HIJO DELE UN ANCHO DE 85%*/
 	body > section > div:nth-child(2) > div:nth-child(1) p{
 		width: 85%;
 	}	
 }
 
 @media only screen and (max-width: 600px){
+	/* HAGA QUE EL PRIMER HIJO DIV DEL PRIMER BLOQUE OCUPE TODO EL ANCHO */
 	section > div:nth-child(1) > div:nth-child(1){
 		width:100%;
 		margin: 0;
 	}
+	/* HAGA QUE LA PRIMERA SUBSECCION QUE SE MOSTRABA COMO TABLA AHORA SE MUESTRE COMO BLOQUE*/
 	section > div:nth-child(1) > div:nth-child(1) section{
 		box-sizing: border-box;
 		display: block;
 	}
+	/* A TODOS ESTOS DIVS QUE ESTABAN FLOTANDO PARA FACILITAR EL RWD QUITELES LA PROPIEDAD FLOAT PARA QUE TODO SE COLOQUE UNO DEBAJO DEL OTRO */
 	section > div:nth-child(1) > div:nth-child(1) section > div:nth-child(1){
 		float: none;
 		width:100%;
 	}
+	/* A TODOS ESTOS DIVS QUE ESTABAN FLOTANDO PARA FACILITAR EL RWD QUITELES LA PROPIEDAD FLOAT PARA QUE TODO SE COLOQUE UNO DEBAJO DEL OTRO */
 	section > div:nth-child(1) > div:nth-child(1) section > div:nth-child(2){
 		float: none;
 		width: 100%;
-	}	
+	}
+	/* AL H2 DENTRO DEL PRIMER BLOQUE DE CONTENIDO EN SU PRIMER HIJO HAGA QUE CENTRE EL TEXTO*/
 	section > div:nth-child(1) > div:nth-child(1) h2{
 		text-align: center
 	}
+	/* AL PRIMER HIJO DENTRO DEL SEGUNDO BLOQUE DE CONTENIDO DELE UN ANCHO DE 90%*/
 	body > section > div:nth-child(2) > div:nth-child(1){
 		width:90%;
 	}	

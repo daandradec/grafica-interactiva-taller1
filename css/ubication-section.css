@@ -1,0 +1,52 @@
+/* APLICAR ESTILOS DE MARGEN, TAMAÑO Y COLOR DE FONDO A LA ETIQUETA SECCION*/
+section{
+	margin-top: 180px;
+	min-height: calc(100vh - 180px);
+	background: white;
+}
+/* AL PRIMER HIJO DE TIPO DIV DE UN SECTION APLIQUE TODOS ESTOS ESTILOS DE ANCHO, MARGEN, ALINEACION Y PADDING*/
+section > div:nth-child(1){
+	width: 64%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 40px;
+}
+/* A TODOS LOS H3 DENTRO DE UNA SECCION APLIQUE TODOS ESTOS ESTILOS DE FUENTE, COLOR, PADDING, BORDE*/
+section h3{
+	font-family: 'Anton';
+	font-size: 40px;
+	line-height: 44px;
+	color: #e854a4;
+	padding-bottom: 25px;
+	border-bottom: 1px dotted rgb(205,205,205);
+}
+/* A TODOS LOS P DENTRO DE UNA SECCION APLIQUE TODOS ESTOS ESTILOS DE FUENTE, PADDING, COLOR*/
+section p{
+	font-family: 'Signika-Light';
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	padding-right: 10px;
+	padding-top: 5px;
+	color:gray;
+}
+
+
+
+
+/* EVENTO DE RWD */
+@media only screen and (max-width: 900px){
+	/* HAGA QUE EL PRIMER HIJO DIV TENGA MAS TAMAÑO*/
+	section > div:nth-child(1){
+		width:72%;
+		margin: 0 auto;	
+	}	
+}
+
+@media only screen and (max-width: 600px){
+	/* HAGA QUE EL PRIMER HIJO DIV OCUPE TODO EL ANCHO */
+	section > div:nth-child(1){
+		width:100%;
+		margin: 0;
+	}
+}

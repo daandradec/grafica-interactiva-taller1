@@ -1,43 +1,63 @@
+/* APLICAR ESTILOS DE TAMAÑO, POSICION Y COLOR DE FONDO A LA ETIQUETA FOOTER*/
 footer{
 	min-height: 500px;
 	background: black;
 	position: relative;
-	z-index: -10;
 }
-
+/* AL PRIMER HIJO DELE UNA FORMA DE UNA CAJA CENTRADA CON CASI LA MITAD DEL ANCHO*/
 footer > div:nth-child(1){
 	width:62%;
 	min-height: 300px;
 	padding: 30px 0;
 	margin: 0 auto;
 }
+/* UBIQUE EN  LA PARTE DE ABAJO LO QUE SERA EL COPYRIGHT */
 footer > div:nth-child(2){
 	width:100%;
 	position: absolute;
 	bottom: 0;
 	left:0;
 }
+/* DELE FORMA A ESTE DIV CON 62% DE ANCHO Y CENTRADO */
 footer > div:nth-child(2) > div:nth-child(1){
 	width:62%;
 	margin: 0 auto;
 }
-
+/* A TODOS LOS H6 DENTRO DEL FOOTER APLIQUE TODOS ESTOS ESTILOS DE FUENTE, COLOR*/
 footer h6{
 	font-family: 'Signika-Light';
 	font-size: 16px;
 	line-height: 32px;	
 	color: white;
 }
-footer ul, footer p{
+/* A TODOS LOS UL,P,HIPERVINCULO DENTRO DEL FOOTER APLIQUE TODOS ESTOS ESTILOS DE FUENTE, COLOR*/
+footer ul, footer p, footer a{
 	font-family: 'Signika-Light';
 	font-size: 16px;
 	line-height: 32px;
 	color: #ababab;
 }
+/* A TODOS LOS P DEL FOOTER DELE UN ANCHO DE 90% */
 footer p{
 	width: 90%;
 }
-
+/* A TODOS LOS A DEL FOOTER DELES UN COLOR ESPECIFICO */
+footer a{
+	color: #48969c;
+}
+/* A TODOS LOS A DEL FOOTER EN EL EVENTO HOVER DELES UN COLOR ESPECIFICO */
+footer a:hover{
+	color: #50aeb5;
+}
+/* A TODOS LOS A DENTRO DE UN UL DEL FOOTER DELES UN COLOR ESPECIFICO */
+footer ul a{
+	color: #ababab !important;
+}
+/* A TODOS LOS A DENTRO DE UN UL DEL FOOTER EN EL EVENTO HOVER DELES UN COLOR ESPECIFICO */
+footer ul a:hover{
+	color: white !important;
+}
+/* CONVIERTA EN FLOTANTES TODOS ESTOS DIVS PARA FACILITAR EL RWD EN FORMA DE COLUMNAS */
 footer > div:nth-child(1) > div:nth-child(1){
 	float:left;
 	width:35%;
@@ -53,18 +73,17 @@ footer > div:nth-child(1) > div:nth-child(3){
 
 
 
-/* */
+/* EVENTO DE RWD */
 @media only screen and (max-width: 900px){
+	/* HAGA QUE EL PRIMER HIJO DIV TENGA MAS TAMAÑO*/
 	footer > div:nth-child(1){
 		width:70%;
 		min-height: 500px;
 	}	
-	footer p{
-		width:90%;
-	}
 }
 
 @media only screen and (max-width: 600px){
+	/* HAGA QUE EL PRIMER HIJO DIV TENGA AUN MAS TAMAÑO*/
 	footer > div:nth-child(1){
 		width:80%;
 		min-height: 550px;

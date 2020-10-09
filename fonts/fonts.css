@@ -1,9 +1,9 @@
+/* ARCHIVO CSS PARA CARGAR LAS FUENTES EXTERNAS DENTRO DE TODO EL PROYECTO */
 @font-face{
   font-family: 'Anton';
   font-style: normal;  
   src: url('Anton/Anton-Regular.ttf');
 }
-
 @font-face{
   font-family: 'Signika';
   font-style: normal;  
